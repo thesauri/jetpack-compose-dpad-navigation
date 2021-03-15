@@ -11,6 +11,6 @@ In practice, the desired behavior may be that focus isn't assigned until the use
 Furthermore, whenever the user taps somewhere on the screen focus is lost and the user cannot regained focus by pressing the dpad keys.
 
 This repo is an experimental workaround for addressing the aforementioned concerns given the current state of the APIs.
-The beef is in [FocusableBoxes.kt](app/java/dev/berggren/FocusableBoxes.kt) and uses a full-screen composable to capture the focus whenever the user taps the screen with its focus order set to direct the user back to an item upon key presses.
+The beef is in [FocusableBoxes.kt](app/src/main/java/dev/berggren/FocusableBoxes.kt) and uses a full-screen composable to capture the focus whenever the user taps the screen with its focus order set to direct the user back to an item upon key presses.
 
 Suggestions for alternative ways of solving this are welcome until we have official support for this feature. 🕺
